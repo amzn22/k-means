@@ -136,3 +136,8 @@ def cluster_count(points):
 def k_means(points):
     cluster_amount = cluster_count(points)
     return k_means_with_k(points, cluster_amount)
+
+if __name__ == '__main__':
+    points = []
+    points = rand_points(100)
+    k_means(points)
